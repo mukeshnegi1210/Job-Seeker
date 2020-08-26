@@ -112,7 +112,10 @@
 			<div class="row">
 				<div class="col-md-12   col-lg-12">
 					<div class="tr-sidebar">
-						<ul class="nav nav-tabs profile-tabs profile-tabs-2 section" role="tablist">
+						<div class="selected-tab-status">
+							<p><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>Dashboard</p>
+						</div>
+						<ul class="nav nav-tabs profile-tabs profile-tabs-2 section mobile-tab" role="tablist">
 							<li role="presentation"><a class="active" href="#employee-dashboard"
 									aria-controls="employee-dashboard" role="tab" data-toggle="tab"><span><i
 											class="fa fa-tachometer" aria-hidden="true"></i></span>Dashboard</a></li>
@@ -144,7 +147,7 @@
 							<div class="section ">
 								<div class="dashboard-tabs-wrapper">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-6 order-2 order-md-1">
 											<ul class="nav nav-tabs dashboard-tabs " role="tablist">
 												<li role="presentation"><a class="active" href="#job-dashboard"
 														aria-controls="job-dashboard" role="tab" data-toggle="tab"
@@ -155,8 +158,7 @@
 												<li role="presentation"><a href="#candidate-dashboard"
 														aria-controls="candidate-dashboard" role="tab" data-toggle="tab"
 														class="" aria-selected="false"><span><i class="fa fa-user-o"
-																aria-hidden="true"></i></span>Company
-														Candidates</a></li>
+																aria-hidden="true"></i></span> Candidates</a></li>
 
 												<li role="presentation"><a href="#chat-box" aria-controls="chat-box"
 														role="tab" data-toggle="tab" aria-selected="true"><span><i
@@ -164,9 +166,9 @@
 														Messages</a></li>
 											</ul>
 										</div>
-										<div class="col-md-6">
+										<div class="col-md-6 order-1 order-md-2">
 											<div class="row">
-												<div class="col-9">
+												<div class="col-8 col-md-9">
 													<div class="input-group">
 														<input type="text" class="form-control"
 															placeholder="Search Candidate">
@@ -177,7 +179,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="col-3">
+												<div class="col-4 col-md-3">
 													<a class="btn btn-primary" href="#">Post Job</a>
 												</div>
 											</div>
@@ -195,9 +197,9 @@
 												<div class="row">
 													<div class="col-md-5">
 														<div class="dropdown tr-change-dropdown">
-															<h4 data-toggle="dropdown" href="#" aria-expanded="false">
+															<h5 data-toggle="dropdown" href="#" aria-expanded="false">
 																<span class="change-text">Open and Paused jobs
-																	(3)</span><i class="fa fa-angle-down ml-2"></i></h4>
+																	(3)</span><i class="fa fa-angle-down ml-2"></i></h5>
 															<ul class="dropdown-menu tr-change">
 																<li><a href="#">Open and Paused Jobs</a></li>
 																<li><a href="#">Open Jobs</a></li>
@@ -480,7 +482,11 @@
 														</div>
 													</div>
 													<div class="col-md-6">
-														<ul class="nav nav-tabs candidate-tabs" role="tablist">
+														<div class="selected-tab-status">
+															<p> <span>5</span><span>Active</span></p>
+														</div>
+														<ul class="nav nav-tabs candidate-tabs mobile-tab"
+															role="tablist">
 															<li role="presentation"><a href="#active-candidates"
 																	class="active" aria-controls="active-candidates"
 																	role="tab" data-toggle="tab" aria-selected="false">
@@ -1710,8 +1716,242 @@
 									</div>
 									<div role="tabpanel" class="tab-pane" id="chat-box">
 										<div class="chat-box-main employer-common-dashboard">
+											<div class="row no-gutters">
+												<div class="col-md-4 border-right">
+													<div class="chat-left-panel">
+														<div class="settings-tray">
+															<div class="profile-image">
+																<img class=""
+																	src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/optimus-prime.jpeg"
+																	alt="">
+																<span class="availablity-status active"></span>
+															</div>
+															<div class="text ml-2">
+																<h6 class="mb-0">Mukesh</h6>
+																<p class="text-muted m-0 small">Working from Home</p>
+															</div>
+															<span class="settings-tray--right pl-2">
+																<i class="fa fa-refresh"></i>
+																<i class="fa fa-pencil-square-o"></i>
+																<i class="fa fa-bars"></i>
+															</span>
+														</div>
+														<div class="search-box">
+															<div class="input-wrapper">
+																<i class="fa fa-search"></i>
+																<input placeholder="Search here" type="text">
+															</div>
+														</div>
+														<div class="friend-drawer-wrapper">
 
-											This is chat box
+															<div class="friend-drawer friend-drawer--onhover">
+																<div class="profile-image">
+																	<img class=""
+																		src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/optimus-prime.jpeg"
+																		alt="">
+																	<span class="availablity-status active"></span>
+																</div>
+
+																<div class="text">
+																	<h6>Optimus</h6>
+																	<p class="text-muted">Wanna grab a beer?</p>
+																</div>
+																<span class="time text-muted small">00:32</span>
+															</div>
+
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status offline"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status away"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status active"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status away"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status offline"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status offline"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status offline"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+															<div class="friend-drawer friend-drawer--onhover ">
+																<div class="profile-image">
+																	<img src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/real-terminator.png"
+																		alt="">
+																	<span class="availablity-status offline"></span>
+																</div>
+																<div class="text">
+																	<h6>Skynet</h6>
+																	<p class="text-muted">Seen that canned piece of s?
+																	</p>
+																</div>
+																<span class="time text-muted small">13:21</span>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div class="col-md-8 right-panel-wrapper">
+													<div class="chat-right-panel">
+														<div class="settings-tray">
+															<div class="friend-drawer no-gutters friend-drawer--grey">
+																<div class="profile-image">
+																	<img class=""
+																		src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/optimus-prime.jpeg"
+																		alt="">
+																	<span class="availablity-status active"></span>
+																</div>
+																<div class="text">
+																	<h6>Robo Cop</h6>
+																	<p class="text-muted">Layin' down the law since...
+																	</p>
+																</div>
+																<span class="settings-tray--right">
+																
+																	<i class="fa fa-bars"></i>
+																	<i class="close-chat-right fa fa-times d-md-none d-block"></i>
+																</span>
+																</span>
+															</div>
+														</div>
+														<div class="chat-panel">
+															<div class="row no-gutters">
+																<div class="col-md-3">
+																	<div class="chat-bubble chat-bubble--left">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3 offset-md-9">
+																	<div class="chat-bubble chat-bubble--right">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3 offset-md-9">
+																	<div class="chat-bubble chat-bubble--right">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3">
+																	<div class="chat-bubble chat-bubble--left">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3">
+																	<div class="chat-bubble chat-bubble--left">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3">
+																	<div class="chat-bubble chat-bubble--left">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+															<div class="row no-gutters">
+																<div class="col-md-3 offset-md-9">
+																	<div class="chat-bubble chat-bubble--right">
+																		Hello dude!
+																	</div>
+																</div>
+															</div>
+
+														</div>
+														<div class="chat-box-tray">
+															<i class="fa fa-smile-o "></i>
+															<input type="text" placeholder="Type your message here...">
+															<i class="fa fa-microphone"></i>
+															<i class="fa fa-paper-plane"></i>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
