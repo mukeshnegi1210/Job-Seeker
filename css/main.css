@@ -3694,11 +3694,16 @@ flex: 0 0 20%;
 	color: #ffffff
 }
 
-.account-info, .open-role{
+.account-info, .open-role,.archived-job{
 	padding:30px;
 	background: #ffffff;
 }
-.account-info .fun-fact, .resume-last-updated, .section.display-information, .social-links-section, .open-role .role{
+.archived-job .job-item,
+.account-info .fun-fact,
+ .resume-last-updated, 
+ .section.display-information, 
+ .social-links-section, 
+ .open-role .role{
 	border:1px solid #dee2e6;
 }
 @media (min-width: 576px){
