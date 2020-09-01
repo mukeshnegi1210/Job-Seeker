@@ -173,35 +173,71 @@ jQuery(function ($) {
 $(function () {
     var window_width = $(window).width();
 
-  
+
     function mobile_tabs() {
-       
-            $('.mobile-tab li a').click(function () {
-                var tab_text = $(this).html();
-                $(this).closest('.mobile-tab').prev('.selected-tab-status').find('p').empty().append(tab_text);
-                $(this).closest('.mobile-tab').slideUp();
-            });
-     
+
+        $('.mobile-tab li a').click(function () {
+            var tab_text = $(this).html();
+            $(this).closest('.mobile-tab').prev('.selected-tab-status').find('p').empty().append(tab_text);
+            $(this).closest('.mobile-tab').slideUp();
+        });
+
     }
     if (window_width < 767) {
         mobile_tabs();
     }
 
+    // =======================New JS function ===========================//
+
+    // custom popup===============
+    $('.custom-popup .btn-close-popup').click(function () {
+        $('.custom-popup').hide();
+    });
+    $('.custom-popup').click(function () {
+        $(this).hide();
+    });
+    $(".custom-popup-inner").click(function (event) {
+        event.stopImmediatePropagation();
+
+    });
 
 
+    // ================= activating tooptip
     $('[data-toggle="tooltip"]').tooltip();
 
 
-
-
+    //=================== custom mobile tab select
     $('.selected-tab-status').click(function () {
         $(this).next('.mobile-tab').slideDown(200);
     });
 
+    //======= chat --------------
     $('.chat-left-panel .friend-drawer-wrapper .friend-drawer').click(function () {
         $('.right-panel-wrapper').show(200);
     });
     $('.close-chat-right').click(function () {
         $('.right-panel-wrapper').hide(200);
+    });
+
+
+    // Job summary full view==============
+    $('.job-summary .action-expand .btn-expand.view-more').click(function () {
+        $('.job-summary  .job-summary-inner').addClass('active');
+
+    });
+    $('.job-summary .action-expand .btn-expand.view-less').click(function () {
+        $('.job-summary  .job-summary-inner').removeClass('active');
+        $("html, body").animate({
+            scrollTop: $(".job-summary  .job-summary-inner").offset().top - 50
+        }, 600);
+    });
+
+    // quick profile update =============
+    $('#add_prof_details').click(function () {
+        $('.profile-update-form').slideToggle(200);
+        
+    });
+    $('.custom-scroll').mCustomScrollbar({
+        axis:"y"
     });
 });
